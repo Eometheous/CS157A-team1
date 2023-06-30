@@ -1,0 +1,296 @@
+13-Jun-2023 10:35:21.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.10
+13-Jun-2023 10:35:21.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 2 2023 18:11:59 UTC
+13-Jun-2023 10:35:21.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.10.0
+13-Jun-2023 10:35:21.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+13-Jun-2023 10:35:21.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.4
+13-Jun-2023 10:35:21.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+13-Jun-2023 10:35:21.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Users/joth/Library/Java/JavaVirtualMachines/corretto-17.0.7/Contents/Home
+13-Jun-2023 10:35:21.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.7+7-LTS
+13-Jun-2023 10:35:21.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+13-Jun-2023 10:35:21.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 10:35:21.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 10:35:21.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/joth/repos/CS157A/apache-tomcat-10.1.10/conf/logging.properties
+13-Jun-2023 10:35:21.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+13-Jun-2023 10:35:21.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+13-Jun-2023 10:35:21.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+13-Jun-2023 10:35:21.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+13-Jun-2023 10:35:21.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+13-Jun-2023 10:35:21.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+13-Jun-2023 10:35:21.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+13-Jun-2023 10:35:21.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+13-Jun-2023 10:35:21.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+13-Jun-2023 10:35:21.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 10:35:21.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 10:35:21.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/joth/repos/CS157A/apache-tomcat-10.1.10/temp
+13-Jun-2023 10:35:21.570 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/joth/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+13-Jun-2023 10:35:21.681 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 10:35:21.699 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [226] milliseconds
+13-Jun-2023 10:35:21.717 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+13-Jun-2023 10:35:21.717 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.10]
+13-Jun-2023 10:35:21.721 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/docs]
+13-Jun-2023 10:35:21.854 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/docs] has finished in [133] ms
+13-Jun-2023 10:35:21.855 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/manager]
+13-Jun-2023 10:35:21.870 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/manager] has finished in [16] ms
+13-Jun-2023 10:35:21.870 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/examples]
+13-Jun-2023 10:35:21.974 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/examples] has finished in [104] ms
+13-Jun-2023 10:35:21.974 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/ROOT]
+13-Jun-2023 10:35:21.982 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/ROOT] has finished in [8] ms
+13-Jun-2023 10:35:21.982 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/host-manager]
+13-Jun-2023 10:35:21.990 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/host-manager] has finished in [8] ms
+13-Jun-2023 10:35:21.991 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 10:35:21.997 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [298] milliseconds
+13-Jun-2023 10:36:41.225 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+13-Jun-2023 10:36:41.226 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 10:36:41.229 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+13-Jun-2023 10:36:41.239 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 10:36:41.241 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 16:49:54.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.10
+13-Jun-2023 16:49:54.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 2 2023 18:11:59 UTC
+13-Jun-2023 16:49:54.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.10.0
+13-Jun-2023 16:49:54.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+13-Jun-2023 16:49:54.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.4
+13-Jun-2023 16:49:54.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+13-Jun-2023 16:49:54.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Users/joth/Library/Java/JavaVirtualMachines/corretto-17.0.7/Contents/Home
+13-Jun-2023 16:49:54.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.7+7-LTS
+13-Jun-2023 16:49:54.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+13-Jun-2023 16:49:54.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 16:49:54.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 16:49:54.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/joth/repos/CS157A/apache-tomcat-10.1.10/conf/logging.properties
+13-Jun-2023 16:49:54.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+13-Jun-2023 16:49:54.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+13-Jun-2023 16:49:54.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+13-Jun-2023 16:49:54.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+13-Jun-2023 16:49:54.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+13-Jun-2023 16:49:54.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+13-Jun-2023 16:49:54.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+13-Jun-2023 16:49:54.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+13-Jun-2023 16:49:54.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+13-Jun-2023 16:49:54.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 16:49:54.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 16:49:54.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/joth/repos/CS157A/apache-tomcat-10.1.10/temp
+13-Jun-2023 16:49:54.837 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/joth/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+13-Jun-2023 16:49:54.942 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 16:49:54.954 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [206] milliseconds
+13-Jun-2023 16:49:54.970 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+13-Jun-2023 16:49:54.971 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.10]
+13-Jun-2023 16:49:54.974 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/docs]
+13-Jun-2023 16:49:55.228 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 16:49:55.246 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/docs] has finished in [272] ms
+13-Jun-2023 16:49:55.246 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/manager]
+13-Jun-2023 16:49:55.373 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 16:49:55.376 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/manager] has finished in [130] ms
+13-Jun-2023 16:49:55.376 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/examples]
+13-Jun-2023 16:49:55.565 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 16:49:55.573 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/examples] has finished in [197] ms
+13-Jun-2023 16:49:55.573 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/ROOT]
+13-Jun-2023 16:49:55.695 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 16:49:55.696 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/ROOT] has finished in [123] ms
+13-Jun-2023 16:49:55.696 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/host-manager]
+13-Jun-2023 16:49:55.818 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 16:49:55.818 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/host-manager] has finished in [122] ms
+13-Jun-2023 16:49:55.820 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 16:49:55.826 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [871] milliseconds
+13-Jun-2023 16:53:51.906 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+13-Jun-2023 16:53:51.907 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 16:53:51.908 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+13-Jun-2023 16:53:51.919 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 16:53:51.921 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 16:54:05.879 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.10
+13-Jun-2023 16:54:05.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 2 2023 18:11:59 UTC
+13-Jun-2023 16:54:05.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.10.0
+13-Jun-2023 16:54:05.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+13-Jun-2023 16:54:05.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.4
+13-Jun-2023 16:54:05.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+13-Jun-2023 16:54:05.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Users/joth/Library/Java/JavaVirtualMachines/corretto-17.0.7/Contents/Home
+13-Jun-2023 16:54:05.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.7+7-LTS
+13-Jun-2023 16:54:05.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+13-Jun-2023 16:54:05.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 16:54:05.881 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 16:54:05.886 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/joth/repos/CS157A/apache-tomcat-10.1.10/conf/logging.properties
+13-Jun-2023 16:54:05.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+13-Jun-2023 16:54:05.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+13-Jun-2023 16:54:05.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+13-Jun-2023 16:54:05.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+13-Jun-2023 16:54:05.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+13-Jun-2023 16:54:05.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+13-Jun-2023 16:54:05.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+13-Jun-2023 16:54:05.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+13-Jun-2023 16:54:05.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+13-Jun-2023 16:54:05.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 16:54:05.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 16:54:05.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/joth/repos/CS157A/apache-tomcat-10.1.10/temp
+13-Jun-2023 16:54:05.891 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/joth/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+13-Jun-2023 16:54:05.996 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 16:54:06.008 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [199] milliseconds
+13-Jun-2023 16:54:06.023 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+13-Jun-2023 16:54:06.023 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.10]
+13-Jun-2023 16:54:06.026 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/docs]
+13-Jun-2023 16:54:06.275 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 16:54:06.294 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/docs] has finished in [268] ms
+13-Jun-2023 16:54:06.294 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/manager]
+13-Jun-2023 16:54:06.423 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 16:54:06.426 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/manager] has finished in [132] ms
+13-Jun-2023 16:54:06.426 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/examples]
+13-Jun-2023 16:54:06.619 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 16:54:06.627 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/examples] has finished in [201] ms
+13-Jun-2023 16:54:06.627 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/ROOT]
+13-Jun-2023 16:54:06.750 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 16:54:06.751 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/ROOT] has finished in [123] ms
+13-Jun-2023 16:54:06.751 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/host-manager]
+13-Jun-2023 16:54:06.873 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 16:54:06.874 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/host-manager] has finished in [123] ms
+13-Jun-2023 16:54:06.875 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 16:54:06.882 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [874] milliseconds
+13-Jun-2023 16:54:35.967 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+13-Jun-2023 16:54:35.967 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 16:54:35.969 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+13-Jun-2023 16:54:35.978 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 16:54:35.980 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 16:54:37.806 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.10
+13-Jun-2023 16:54:37.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 2 2023 18:11:59 UTC
+13-Jun-2023 16:54:37.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.10.0
+13-Jun-2023 16:54:37.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+13-Jun-2023 16:54:37.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.4
+13-Jun-2023 16:54:37.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+13-Jun-2023 16:54:37.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Users/joth/Library/Java/JavaVirtualMachines/corretto-17.0.7/Contents/Home
+13-Jun-2023 16:54:37.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.7+7-LTS
+13-Jun-2023 16:54:37.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+13-Jun-2023 16:54:37.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 16:54:37.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 16:54:37.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/joth/repos/CS157A/apache-tomcat-10.1.10/conf/logging.properties
+13-Jun-2023 16:54:37.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+13-Jun-2023 16:54:37.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+13-Jun-2023 16:54:37.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+13-Jun-2023 16:54:37.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+13-Jun-2023 16:54:37.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+13-Jun-2023 16:54:37.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+13-Jun-2023 16:54:37.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+13-Jun-2023 16:54:37.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+13-Jun-2023 16:54:37.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+13-Jun-2023 16:54:37.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 16:54:37.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 16:54:37.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/joth/repos/CS157A/apache-tomcat-10.1.10/temp
+13-Jun-2023 16:54:37.817 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/joth/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+13-Jun-2023 16:54:37.922 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 16:54:37.933 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [196] milliseconds
+13-Jun-2023 16:54:37.948 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+13-Jun-2023 16:54:37.948 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.10]
+13-Jun-2023 16:54:37.952 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/docs]
+13-Jun-2023 16:54:38.203 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 16:54:38.222 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/docs] has finished in [270] ms
+13-Jun-2023 16:54:38.222 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/manager]
+13-Jun-2023 16:54:38.355 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 16:54:38.358 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/manager] has finished in [136] ms
+13-Jun-2023 16:54:38.358 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/examples]
+13-Jun-2023 16:54:38.557 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 16:54:38.565 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/examples] has finished in [207] ms
+13-Jun-2023 16:54:38.565 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/ROOT]
+13-Jun-2023 16:54:38.688 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 16:54:38.689 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/ROOT] has finished in [123] ms
+13-Jun-2023 16:54:38.689 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/host-manager]
+13-Jun-2023 16:54:38.810 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 16:54:38.811 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/host-manager] has finished in [122] ms
+13-Jun-2023 16:54:38.813 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 16:54:38.818 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [884] milliseconds
+13-Jun-2023 16:55:36.238 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+13-Jun-2023 16:55:36.238 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 16:55:36.240 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+13-Jun-2023 16:55:36.250 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 16:55:36.253 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 16:55:38.278 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.10
+13-Jun-2023 16:55:38.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 2 2023 18:11:59 UTC
+13-Jun-2023 16:55:38.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.10.0
+13-Jun-2023 16:55:38.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+13-Jun-2023 16:55:38.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.4
+13-Jun-2023 16:55:38.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+13-Jun-2023 16:55:38.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Users/joth/Library/Java/JavaVirtualMachines/corretto-17.0.7/Contents/Home
+13-Jun-2023 16:55:38.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.7+7-LTS
+13-Jun-2023 16:55:38.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+13-Jun-2023 16:55:38.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 16:55:38.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 16:55:38.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/joth/repos/CS157A/apache-tomcat-10.1.10/conf/logging.properties
+13-Jun-2023 16:55:38.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+13-Jun-2023 16:55:38.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+13-Jun-2023 16:55:38.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+13-Jun-2023 16:55:38.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+13-Jun-2023 16:55:38.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+13-Jun-2023 16:55:38.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+13-Jun-2023 16:55:38.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+13-Jun-2023 16:55:38.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+13-Jun-2023 16:55:38.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+13-Jun-2023 16:55:38.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 16:55:38.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 16:55:38.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/joth/repos/CS157A/apache-tomcat-10.1.10/temp
+13-Jun-2023 16:55:38.290 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/joth/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+13-Jun-2023 16:55:38.395 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 16:55:38.409 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [203] milliseconds
+13-Jun-2023 16:55:38.425 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+13-Jun-2023 16:55:38.425 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.10]
+13-Jun-2023 16:55:38.428 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/docs]
+13-Jun-2023 16:55:38.676 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 16:55:38.695 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/docs] has finished in [267] ms
+13-Jun-2023 16:55:38.696 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/manager]
+13-Jun-2023 16:55:38.823 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 16:55:38.827 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/manager] has finished in [132] ms
+13-Jun-2023 16:55:38.827 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/examples]
+13-Jun-2023 16:55:39.021 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 16:55:39.033 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/examples] has finished in [206] ms
+13-Jun-2023 16:55:39.033 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/ROOT]
+13-Jun-2023 16:55:39.159 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 16:55:39.160 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/ROOT] has finished in [127] ms
+13-Jun-2023 16:55:39.160 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/host-manager]
+13-Jun-2023 16:55:39.282 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 16:55:39.283 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/host-manager] has finished in [123] ms
+13-Jun-2023 16:55:39.285 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 16:55:39.290 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [880] milliseconds
+13-Jun-2023 17:00:53.150 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+13-Jun-2023 17:00:53.150 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 17:00:53.152 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+13-Jun-2023 17:00:53.162 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 17:00:53.165 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 17:01:03.277 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.10
+13-Jun-2023 17:01:03.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 2 2023 18:11:59 UTC
+13-Jun-2023 17:01:03.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.10.0
+13-Jun-2023 17:01:03.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+13-Jun-2023 17:01:03.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            13.4
+13-Jun-2023 17:01:03.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+13-Jun-2023 17:01:03.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Users/joth/Library/Java/JavaVirtualMachines/corretto-17.0.7/Contents/Home
+13-Jun-2023 17:01:03.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.7+7-LTS
+13-Jun-2023 17:01:03.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+13-Jun-2023 17:01:03.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 17:01:03.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 17:01:03.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/joth/repos/CS157A/apache-tomcat-10.1.10/conf/logging.properties
+13-Jun-2023 17:01:03.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+13-Jun-2023 17:01:03.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+13-Jun-2023 17:01:03.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+13-Jun-2023 17:01:03.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+13-Jun-2023 17:01:03.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+13-Jun-2023 17:01:03.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+13-Jun-2023 17:01:03.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+13-Jun-2023 17:01:03.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+13-Jun-2023 17:01:03.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+13-Jun-2023 17:01:03.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 17:01:03.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/joth/repos/CS157A/apache-tomcat-10.1.10
+13-Jun-2023 17:01:03.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/joth/repos/CS157A/apache-tomcat-10.1.10/temp
+13-Jun-2023 17:01:03.289 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/joth/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+13-Jun-2023 17:01:03.393 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 17:01:03.404 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [196] milliseconds
+13-Jun-2023 17:01:03.420 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+13-Jun-2023 17:01:03.420 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.10]
+13-Jun-2023 17:01:03.423 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/docs]
+13-Jun-2023 17:01:03.667 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 17:01:03.685 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/docs] has finished in [262] ms
+13-Jun-2023 17:01:03.685 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/manager]
+13-Jun-2023 17:01:03.812 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 17:01:03.815 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/manager] has finished in [130] ms
+13-Jun-2023 17:01:03.815 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/examples]
+13-Jun-2023 17:01:04.005 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 17:01:04.013 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/examples] has finished in [198] ms
+13-Jun-2023 17:01:04.013 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/ROOT]
+13-Jun-2023 17:01:04.137 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 17:01:04.138 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/ROOT] has finished in [125] ms
+13-Jun-2023 17:01:04.138 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/host-manager]
+13-Jun-2023 17:01:04.255 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Jun-2023 17:01:04.256 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/joth/repos/CS157A/apache-tomcat-10.1.10/webapps/host-manager] has finished in [118] ms
+13-Jun-2023 17:01:04.257 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+13-Jun-2023 17:01:04.263 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [858] milliseconds
