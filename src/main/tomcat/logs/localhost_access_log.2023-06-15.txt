@@ -1,8 +1,0 @@
-0:0:0:0:0:0:0:1 - - [15/Jun/2023:14:50:29 -0700] "GET /JDBCdemo.jsp HTTP/1.1" 200 436
-0:0:0:0:0:0:0:1 - - [15/Jun/2023:14:51:37 -0700] "GET /JDBCdemo.jsp HTTP/1.1" 200 426
-0:0:0:0:0:0:0:1 - - [15/Jun/2023:14:58:54 -0700] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 784
-0:0:0:0:0:0:0:1 - - [15/Jun/2023:14:58:54 -0700] "GET /apple-touch-icon.png HTTP/1.1" 404 772
-0:0:0:0:0:0:0:1 - - [15/Jun/2023:14:58:54 -0700] "GET /favicon.ico HTTP/1.1" 200 21630
-0:0:0:0:0:0:0:1 - - [15/Jun/2023:14:58:59 -0700] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 784
-0:0:0:0:0:0:0:1 - - [15/Jun/2023:14:58:59 -0700] "GET /favicon.ico HTTP/1.1" 200 21630
-0:0:0:0:0:0:0:1 - - [15/Jun/2023:14:58:59 -0700] "GET /apple-touch-icon.png HTTP/1.1" 404 772
