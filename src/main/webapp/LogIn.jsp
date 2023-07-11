@@ -34,10 +34,10 @@
     if (loggedIn) {
         // Redirect to the home page or any other authorized page
         // Will need to create "home.jsp" file
-        response.sendRedirect("home.jsp");
+        response.sendRedirect("Home.jsp");
     } else {
         // Show an error message or redirect to an error page
         // Will need to create "login_error.jsp" file
-        response.sendRedirect("login_error.jsp");
+        response.sendRedirect("Login_Error.jsp");
     }
 %>
