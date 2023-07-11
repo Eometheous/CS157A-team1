@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flight Booking</title>
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, label, input[type="date"], input[type="text"], input[type="submit"] {
+      color: white;
+    }
+
+    form {
+      background-color: black;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    input[type="date"],
+    input[type="text"],
+    input[type="submit"] {
+      background-color: white;
+      color: black;
+      border: none;
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h1>Flight Booking</h1>
+    <label for="departure-date">Date of Flight:</label><br>
+    <input type="date" id="departure-date" name="departure-date"><br><br>
+
+    <label for="return-date">Date of Return Flight:</label><br>
+    <input type="date" id="return-date" name="return-date"><br><br>
+
+    <label for="departure-location">Departure Location:</label><br>
+    <input type="text" id="departure-location" name="departure-location"><br><br>
+    
+    <label for="arrival-location">Arrival Location:</label><br>
+    <input type="text" id="arrival-location" name="arrival-location"><br><br>
+    
+    <label for="return-date">Number of Travelers</label><br>
+    <input type="text" id="destination" name="destination"><br><br>
+
+    <input type="submit" value="Book Flight">
+  </form>
+</body>
+</html>
