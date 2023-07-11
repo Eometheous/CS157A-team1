@@ -33,7 +33,9 @@
         stmt.close();
         connection.close();
 
+        response.sendRedirect("Home.jsp");
+
     } catch (ClassNotFoundException | SQLException e) {
-        throw new RuntimeException(e);
+        response.sendRedirect("SignUp.html");
     }
 %>
