@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Rajdhani", sans-serif;
+}
+
+body {
+    background: #313131;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: #424343;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.brawlBackLogo {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-bar {
+    z-index: 999;
+}
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a{
+    display: block;
+    color: #44cea4;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover{
+    color: #424343;
+    background: #44cea4;
+}
+
+.nav-bar ul li a.active{
+    color: #424343;
+    background: #44cea4;
+}
+
+@media only screen and (min-width: 1500px) {
+    .brawlBackLogo {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .brawlBackLogo{
+        width: 250%;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #4cecbc;
+        margin: 6px 0;
+    }
+   
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #11101b;
+        transition: 0.2s;  
+        overflow: hidden;      
+    }
+
+    .nav-bar.active {
+        height: 12rem;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 1rem auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+
+    .nav-bar ul li a {
+        margin-bottom: 12px ;
+
+    }
+}
+
+.whatWeAre__image{
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    padding-right: 3%;
+}
+
+
+.whatWeAre__description {
+    color: azure;
+    width: 40%;
+    margin: auto;
+}
+
+.whatWeAre__download {
+    justify-content: center;
+    display: flex;
+    padding-top: 2rem;
+    padding-right: 3%;
+}
+
+/* margin: 0; display: flex; justify-content: center; align-items: center; */
+
+.whatWeAre__list {
+    margin-top: 25vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: azure;
+    font-size: 1.5rem;
+}
+
+
+/* Icon from fontawesome */
+.rollback {
+    list-style-image: url("../images/rollback.png");
+    padding-left: 0.6rem;
+}
+
+/* Icon from fontawesome */
+.matchmaking {
+    list-style-image: url("../images/matchmaking.png");
+    padding-left: 0.6rem;
+}
+/* Icon from fontawesome */
+.replays {
+    list-style-image: url("../images/replays.png");
+    padding-left: 0.6rem;
+}
+
+.notYourOS {
+    justify-content: center;
+    display: flex;
+    margin-right: 3%;
+    margin-top: 1%;
+}
+
+.notYourOS a {
+    text-decoration: underline;
+    color: #3db591;
+}
+
+footer {
+    background: #424343;
+    color: #44cea4;
+    height: auto;
+    padding-top: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 1.7rem;
+    transition: color 0.2s ease;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem;
+    padding-right: 3%;
+}
+
+.socials li {
+    margin: 0 1.3rem;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #44cea4;
+}
+
+.socials a:hover i {
+    color: #40967C;
+}
