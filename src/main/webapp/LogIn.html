@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <link rel="stylesheet" href="FlightReservationSystem.css">
 </head>
-<body>
-    <h1>Login</h1>
-    <form action="LogIn.jsp" method="post">
-        <label for="Email">Email:</label>
-        <input type="text" id="email" name="email" required><br>
-
-        <label for="Password">Password:</label>
-        <input type="password" id="password" name="password" required><br>
-
-        <input type="Submit" value="Login">
-    </form>
-
-    <form action="SignUp.html">
-        <input type="submit" value="Sign Up">
-    </form>
+<body style="text-align: center;">
+    <ul>
+        <li>
+            <h1>Login</h1>
+        </li>
+        <li style="text-align: end;">
+            <form action="LogIn.jsp" method="post">
+                <input type="text" id="email" name="email" required placeholder="Email"><br>
+        
+                <input type="text" id="password" name="password" required placeholder="Password"><br>
+                <br>
+                <input style="margin-top: 1rem" type="Submit" value="Login">
+            </form>
+        </li>
+        <li>
+            <form action="SignUp.html">
+                <input type="submit" value="Sign Up">
+            </form>
+        </li>
+    </ul>
+    
 </body>
 </html>
