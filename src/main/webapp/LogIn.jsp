@@ -1,4 +1,60 @@
 <%@ page import="java.sql.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NavBar -->
+    <header>
+        <h1> <a href="index.html" style="width: 20%; text-decoration: none; color: #44cea4;">Flights GO</a></h1>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="LogIn.jsp">Login</a>
+                </li>
+                <li>
+                    <a href="SignUp.jsp">Signup</a>
+                </li>
+                <li>
+                    <a href="landingPage.jsp">Book</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="whatWeAre__list" style="margin-left: -3rem;">        
+            <ul>
+                <li>
+                    <h1>Login</h1>
+                </li>
+                <li>
+                    <form action="LogIn.jsp" method="post">
+                        <input style="width: 8rem;" placeholder="email" type="text" id="email" required><br>
+                        <input style="width: 8rem;" placeholder="password" type="password" id="password" required><br>
+
+        
+                        <input style="width: 8rem; text-align: center;" type="Submit" value="Login">
+                    </form>
+                </li>
+                <li>
+                    <form action="SignUp.html">
+                        <input style="width: 8rem;" type="submit" value="Sign Up">
+                    </form>
+                </li>
+            </ul>
+            
+        </div>
+    </section>
+</body>
+</html>
 
 <%
     String email = request.getParameter("email");
@@ -35,9 +91,5 @@
         // Redirect to the home page or any other authorized page
         // Will need to create "home.jsp" file
         response.sendRedirect("Home.jsp");
-    } else {
-        // Show an error message or redirect to an error page
-        // Will need to create "login_error.jsp" file
-        response.sendRedirect("Login_Error.jsp");
     }
 %>
