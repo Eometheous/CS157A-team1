@@ -79,17 +79,20 @@
         ResultSet resultSet = pstmt.executeQuery();
         loggedIn = resultSet.next();
 
+        if (loggedIn) {
+            // Redirect to the home page or any other authorized page
+            // Will need to create "home.jsp" file
+            response.sendRedirect("landingPage.html");
+        }else {
+            // Invalid credentials
+            out.println("Invalid email or password. Please try again.");
+        }
+
         resultSet.close();
         pstmt.close();
         connection.close();
 
     } catch (ClassNotFoundException | SQLException e) {
         throw new RuntimeException(e);
-    }
-
-    if (loggedIn) {
-        // Redirect to the home page or any other authorized page
-        // Will need to create "home.jsp" file
-        response.sendRedirect("Home.jsp");
     }
 %>
