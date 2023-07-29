@@ -3,21 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<script>
+    function resetForm() {
+        var form = document.getElementById('loginForm');
+        console.log("ran");
+        form.reset(); // Reset the form
+    }
+
+    // Call the resetForm function on page load
+    window.onload = resetForm;
+</script>
+
 <body>
-    <h1>Login</h1>
-    <form action="LogIn.jsp" method="post">
-        <label for="Email">Email:</label>
-        <input type="text" id="email" name="email" required><br>
-
-        <label for="Password">Password:</label>
-        <input type="password" id="password" name="password" required><br>
-
-        <input type="Submit" value="Login">
-    </form>
-
-    <form action="SignUp.html">
-        <input type="submit" value="Sign Up">
-    </form>
+    <!-- NavBar -->
+    <header>
+        <h1> <a href="index.html" style="width: 20%; text-decoration: none; color: #44cea4;">Flights GO</a></h1>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="LogIn.html">Login</a>
+                </li>
+                <li>
+                    <a href="SignUp.html">Signup</a>
+                </li>
+                <li>
+                    <a href="landingPage.html">Book</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="whatWeAre__list" style="margin-left: -3rem;">        
+            <ul>
+                <li>
+                    <h1>Login</h1>
+                </li>
+                <li>
+                    <form action="LogIn.jsp" method="post" id="loginForm">
+                        <input style="width: 8rem;" placeholder="email" type="text" id="email" name="email" required><br>
+                        <input style="width: 8rem;" placeholder="password" type="password" id="password" name="password" required><br>
+        
+                        <input style="width: 8rem; text-align: center;" type="submit" value="Login" name="loginButton" id="loginBut">
+                    </form>
+                </li>
+                <li>
+                    <form action="/SignUp.jsp">
+                        <a href="/SignUp.jsp"><input style="width: 8rem;" type="submit" value="Sign Up"></a>
+                    </form>
+                </li>
+            </ul>
+            
+        </div>
+    </section>
 </body>
 </html>
