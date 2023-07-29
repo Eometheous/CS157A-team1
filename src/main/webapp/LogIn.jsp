@@ -30,7 +30,7 @@
                 response.sendRedirect("landingPage.html");
             } else {
                 // Invalid credentials
-                response.sendRedirect("LogIn.jsp");
+                response.sendRedirect("LogIn.html");
             }
 
             resultSet.close();
