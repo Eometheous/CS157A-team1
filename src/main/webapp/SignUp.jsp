@@ -25,12 +25,14 @@
                                 "(`email`," +
                                 "`first_name`," +
                                 "`last_name`," +
-                                "`password`)" +
+                                "`password`," +
+                                "`access_level`)" +
                                 "VALUES" +
                                 "('" + email + "'," +
                                 "'" + firstName + "'," +
                                 "'" + lastName + "'," +
-                                "'" + password + "');";
+                                "'" + password + "'," +
+                                "'" + 0 + "');";
 
             Statement stmt = connection.createStatement();
 
@@ -39,7 +41,7 @@
             stmt.close();
             connection.close();
 
-            response.sendRedirect("Home.jsp");
+            response.sendRedirect("LogIn.html");
 
         } catch (ClassNotFoundException | SQLException e) {
             response.sendRedirect("SignUp.html");
