@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `flight_reservation_system` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `flight_reservation_system`;
 -- MySQL dump 10.13  Distrib 8.0.33, for macos13 (arm64)
 --
 -- Host: localhost    Database: flight_reservation_system
@@ -30,6 +28,7 @@ CREATE TABLE `user` (
   `first_name` varchar(45) NOT NULL,
   `last_name` varchar(45) NOT NULL,
   `password` varchar(45) NOT NULL,
+  `access_level` int NOT NULL,
   PRIMARY KEY (`iduser`),
   UNIQUE KEY `email_UNIQUE` (`email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -41,7 +40,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'null','null','null','null'),(2,'jonathan.sthomas@icloud.com','Jonathan','Thomas','amazingPassword'),(4,'helloworld@gmail.com','Hello','World','HelloWorld'),(9,'jonathan.thomas@sjsu.edu','Jonathan','Thomas','anotherSuperAmazingPassword');
+INSERT INTO `user` VALUES (1,'null','null','null','null',0),(2,'jonathan.sthomas@icloud.com','Jonathan','Thomas','amazingPassword',0),(4,'helloworld@gmail.com','Hello','World','HelloWorld',0),(9,'jonathan.thomas@sjsu.edu','Jonathan','Thomas','anotherSuperAmazingPassword',0);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -54,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-07-28 12:11:26
+-- Dump completed on 2023-07-29 17:50:53
