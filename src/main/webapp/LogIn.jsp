@@ -1,4 +1,6 @@
 <%@ page import="java.sql.*" %>
+<%@ page import="java.util.*" %>
+<%@ page import="javax.servlet.http.*" %>
 
 <%
     if (request.getParameter("loginButton") != null)  {
@@ -25,12 +27,19 @@
             loggedIn = resultSet.next();
 
             if (loggedIn) {
-                // Redirect to the home page or any other authorized page
-                // Will need to create "home.jsp" file
-                response.sendRedirect("landingPage.html");
+
+                if (session == null) {
+                    // Create a new session and set the "email" attribute
+                    session = request.getSession(true);
+                }
+                session.setAttribute("email", email);
+                
+                // Redirect to the secured page
+                response.sendRedirect("secured_page.jsp");
             } else {
                 // Invalid credentials
-                response.sendRedirect("LogIn.html");
+                out.println(email);
+                out.println(password);
             }
 
             resultSet.close();
