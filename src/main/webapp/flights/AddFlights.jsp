@@ -37,6 +37,32 @@
         }
         int airport1_id = resultSet.getInt(1);
 
+        // select airport_id from the airport table for airport2
+        String queryAirport2 = "SELECT airport_id FROM airport WHERE airport_name = ?";
+
+        pstmt = connection.prepareStatement(queryAirport2);
+        pstmt.setString(1, destinationAirport);
+
+        resultSet = pstmt.executeQuery();
+
+        if (!resultSet.next()) {
+            // airport is not in the database, need to add it.
+            String insertAirport2 = "INSERT INTO `flight_reservation_system`.`airport` (`airport_name`) VALUES ('" + destinationAirport + "');";
+
+            Statement stmt = connection.createStatement();
+            stmt.execute(insertAirport2);
+
+            // now that the new airport is added, get the airport airport1_id
+            pstmt = connection.prepareStatement(queryAirport2);
+            pstmt.setString(1, destinationAirport);
+
+            resultSet = pstmt.executeQuery();
+            resultSet.next();
+        }
+        int airport2_id = resultSet.getInt(1);
+
+
+
         resultSet.close();
         pstmt.close();
         connection.close();
