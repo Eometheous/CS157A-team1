@@ -61,13 +61,27 @@
         }
         int airport2_id = resultSet.getInt(1);
 
+        // now that both airports are ready, time to create a new flight
+        String insertFlight = "INSERT INTO `flight_reservation_system`.`flight`" +
+                              "(`departing_airport`," +
+                              "`arriving_airport`," +
+                              "`departure_time`," +
+                              "`arrival_time`)" +
+                              "VALUES" +
+                              "('" + airport1_id + "'," +
+                              "'" + airport2_id + "'," +
+                              "'" + startDateTime + "'," +
+                              "'" + endDateTime + "');";
 
+        Statement stmt = connection.createStatement();
+        stmt.execute(insertFlight);
 
+        stmt.close();
         resultSet.close();
         pstmt.close();
         connection.close();
 
-        response.sendRedirect("AddFlights.html");
+        response.sendRedirect("FlightListings.jsp");
 
     } catch (ClassNotFoundException | SQLException e) {
         response.sendRedirect("AddFlights.html");
