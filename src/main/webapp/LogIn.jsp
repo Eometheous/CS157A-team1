@@ -35,7 +35,7 @@
                 session.setAttribute("email", email);
                 
                 // Redirect to the secured page
-                response.sendRedirect("secured_page.jsp");
+                response.sendRedirect("landingPage.html");
             } else {
                 // Invalid credentials
                 out.println(email);
