@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Flight</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<!-- NavBar -->
+<header>
+    <h1> <a href="../index.html" style="width: 20%; text-decoration: none; color: #44cea4;">Flights GO</a></h1>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+        <ul>
+            <li>
+                <a href="../user/LogOut.html">Log Out</a>
+            </li>
+            <li>
+                <a href="../landingPage.html">Book</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<section>
+    <div class="whatWeAre__list" style="margin-left: -3rem;">
+        <ul>
+            <li>
+                <h1>Add a New Flight</h1>
+            </li>
+            <li>
+                <form action="AddFlights.jsp" method="post">
+                    <ul>
+                        <li>
+                            <label>
+                                <input style="width: 14rem;" placeholder="starting airport" type="text" name="start">
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input style="width: 14rem;" placeholder="destination airport" type="text" name="end">
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input style="width: 14rem;" placeholder="departure time (yyyy-mm-dd hh:mm:ss)" type="datetime-local" name="departureTime">
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input style="width: 14rem;" placeholder="arrival time (yyyy-mm-dd hh:mm:ss)" type="datetime-local" name="arrivalTime">
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input style="width: 14rem;" type="submit" value="Add Flight" id="">
+                            </label>
+                        </li>
+                    </ul>
+                </form>
+            </li>
+        </ul>
+    </div>
+</section>
+</body>
+</html>
