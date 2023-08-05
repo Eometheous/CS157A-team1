@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `flight_reservation_system` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `flight_reservation_system`;
 -- MySQL dump 10.13  Distrib 8.0.33, for macos13 (arm64)
 --
 -- Host: localhost    Database: flight_reservation_system
@@ -26,12 +24,13 @@ DROP TABLE IF EXISTS `flight`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `flight` (
   `flight_id` int NOT NULL AUTO_INCREMENT,
+  `plane` int NOT NULL DEFAULT '1',
   `departing_airport` int NOT NULL,
   `arriving_airport` int NOT NULL,
   `departure_time` datetime NOT NULL,
   `arrival_time` datetime NOT NULL,
   PRIMARY KEY (`flight_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +39,7 @@ CREATE TABLE `flight` (
 
 LOCK TABLES `flight` WRITE;
 /*!40000 ALTER TABLE `flight` DISABLE KEYS */;
-INSERT INTO `flight` VALUES (1,1,2,'2023-07-30 10:30:00','2023-07-30 12:10:00'),(2,2,1,'2023-07-30 13:20:00','2023-07-30 15:00:00');
+INSERT INTO `flight` VALUES (1,1,1,2,'2023-07-30 10:30:00','2023-07-30 12:10:00'),(2,1,2,1,'2023-07-30 13:20:00','2023-07-30 15:00:00'),(3,1,1,11,'2023-07-31 11:30:00','2023-07-31 12:15:00'),(4,0,12,11,'2023-07-31 11:19:00','2023-07-31 12:30:00');
 /*!40000 ALTER TABLE `flight` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-07-28 12:11:27
+-- Dump completed on 2023-08-04 19:06:23
