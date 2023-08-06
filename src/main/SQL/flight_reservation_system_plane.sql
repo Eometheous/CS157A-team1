@@ -16,31 +16,27 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `flight`
+-- Table structure for table `plane`
 --
 
-DROP TABLE IF EXISTS `flight`;
+DROP TABLE IF EXISTS `plane`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `flight` (
-  `flight_id` int NOT NULL AUTO_INCREMENT,
-  `plane` int NOT NULL DEFAULT '1',
-  `departing_airport` int NOT NULL,
-  `arriving_airport` int NOT NULL,
-  `departure_time` datetime NOT NULL,
-  `arrival_time` datetime NOT NULL,
-  PRIMARY KEY (`flight_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `plane` (
+  `plane_id` int NOT NULL AUTO_INCREMENT,
+  `pilot` int NOT NULL,
+  PRIMARY KEY (`plane_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `flight`
+-- Dumping data for table `plane`
 --
 
-LOCK TABLES `flight` WRITE;
-/*!40000 ALTER TABLE `flight` DISABLE KEYS */;
-INSERT INTO `flight` VALUES (1,1,1,2,'2023-07-30 10:30:00','2023-07-30 12:10:00'),(2,1,2,1,'2023-07-30 13:20:00','2023-07-30 15:00:00'),(3,1,1,11,'2023-07-31 11:30:00','2023-07-31 12:15:00'),(4,0,12,11,'2023-07-31 11:19:00','2023-07-31 12:30:00');
-/*!40000 ALTER TABLE `flight` ENABLE KEYS */;
+LOCK TABLES `plane` WRITE;
+/*!40000 ALTER TABLE `plane` DISABLE KEYS */;
+INSERT INTO `plane` VALUES (1,1);
+/*!40000 ALTER TABLE `plane` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
