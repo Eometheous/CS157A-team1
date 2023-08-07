@@ -35,7 +35,7 @@
   <div class="whatWeAre__list__second" style="margin-left: -3rem;">
     <ul>
       <li>
-        <h1>Your Cart</h1>
+        <h1>Purchased Flights</h1>
       </li>
     </ul> 
   </div>
@@ -49,7 +49,7 @@
             .then(data => {
               const userId = data.iduser;
               console.log(userId);
-              fetch(`./Cart.jsp?iduser=${userId}`)
+              fetch(`./YourFlights.jsp?iduser=${userId}`)
                 .then(response => response.json())
                 .then(data => {
                   const cartItems = data;
@@ -58,24 +58,16 @@
                   cartItems.forEach(item => {
                     const cartItem = document.createElement('li');
                     cartItem.innerHTML = `
-                      <p> Cart ID: ${item.cart_id}</p> 
                       <p> Flight ID: ${item.flight_id}</p> 
                       <p> Plane: ${item.plane} </p>
                       <p> Departing Airport: ${item.departing_airport}</p>
                       <p> Arriving Airport: ${item.arriving_airport}</p>
                       <p> Departure Time: ${item.departure_time}</p> 
                       <p> Arrival Time: ${item.arrival_time}</p>
-                      <form action="RemoveFromCart.jsp?cart_id=${item.cart_id}" method="post" id="RemoveFromCartForm">
-                        <input style="width: 8rem; text-align: center;" type="submit" value="Remove From Cart" name="RemoveFromCartButton" id="RemoveFromCartBut">
-                      </form>
-                      <form action="PurchaseFlight.jsp?flight_id=${item.flight_id}&iduser=${userId}&cart_id=${item.cart_id}" method="post" id="PurchaseCartForm">
-                        <input style="width: 8rem; text-align: center; display: flex; justify-content: center; align-items: center;" type="submit" value="Purchase Flight" name="PurchaseCartButton" id="PurchaseCartBut">
-                      </form>
                       <hr>
                     `;
                     cartList.appendChild(cartItem);
                   });
-                  cartList.append(item);
                   console.log("ran")
                 })
                 .catch(error => {
