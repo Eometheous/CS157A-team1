@@ -47,12 +47,9 @@
               const userId = data.iduser;
               console.log(userId);
 
-              // Make a call to Cart.jsp with iduser parameter
               fetch(`./Cart.jsp?iduser=${userId}`)
                 .then(response => response.json())
                 .then(data => {
-                  // Handle the data received from Cart.jsp and update the <p> tags
-                  // Assuming the response data is an array of objects with 'cart_id', 'flight_id', 'plane', 'departing_airport', 'arriving_airport', 'departure_time', and 'arrival_time' properties
                   const cartItems = data;
                   const cartList = document.getElementById('cartList');
 
@@ -76,17 +73,17 @@
                 })
                 .catch(error => {
                   console.error('Error occurred:', error);
-                  // Handle any errors that occurred during the fetch
+
                 });
             })
             .catch(error => {
               console.error('Error occurred:', error);
-              // Handle any errors that occurred during the fetch
+
             });
         };
       </script>
     </li>
-    <ul id="cartList"></ul> <!-- Add an empty list to display cart items -->
+    <ul id="cartList"></ul> 
   </div>
 </body>
 </html>
