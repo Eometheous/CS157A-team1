@@ -1,14 +1,18 @@
 <%@ page import="javax.servlet.http.HttpSession" %>
 <%
-    session = request.getSession(false);
-    if (session != null) {
-        String email = (String) session.getAttribute("email");
-        if (email != null) {
-            out.println("<p>Hello, " + email + "!</p>");
+    try{
+        session = request.getSession(false);
+        if (session != null) {
+            String email = (String) session.getAttribute("email");
+            if (email != null) {
+                response.sendError(200, "Okay");
+            }else{
+                response.sendError(407, "Bad");
+            }
         } else {
-            out.println("<p>Session exists, but email attribute is not set.</p>");
+            response.sendError(407, "Need Authentication");
         }
-    } else {
-        out.println("<p>No active session found.</p>");
+    }catch (Exception e){
+        response.sendError(407, "Need Authentication");
     }
 %>

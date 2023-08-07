@@ -2,28 +2,53 @@
 <html>
 <head>
   <title>Flight Booking</title>
-  <link rel="stylesheet" href="FlightReservationSystem.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <script type="text/javascript" src="sessionCheck.js"></script>
-<body onload="checkSession()">
-  <form>
-    <h1>Flight Booking</h1>
-    <label for="departure-date">Date of Flight:</label><br>
-    <input type="date" id="departure-date" name="departure-date"><br><br>
-
-    <label for="return-date">Date of Return Flight:</label><br>
-    <input type="date" id="return-date" name="return-date"><br><br>
-
-    <label for="departure-location">Departure Location:</label><br>
-    <input type="text" id="departure-location" name="departure-location"><br><br>
-    
-    <label for="arrival-location">Arrival Location:</label><br>
-    <input type="text" id="arrival-location" name="arrival-location"><br><br>
-    
-    <label for="return-date">Number of Travelers</label><br>
-    <input type="text" id="destination" name="destination"><br><br>
-
-    <input type="submit" value="Book Flight">
-  </form>
+<script type="text/javascript" src="navbar.js"></script>
+<body onload="checkSession(); hamburgerMenu()">
+  <!-- NavBar -->
+  <header>
+    <h1> <a href="index.html" style="width: 20%; text-decoration: none; color: #44cea4;">Flights GO</a></h1>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+        <ul>
+            <li>
+                <a href="user/LogOut.html">LogOut</a>
+            </li>
+            <li>
+                <a href="user/SignUp.html">Signup</a>
+            </li>
+            <li>
+                <a href="landingPage.html">Book</a>
+            </li>
+        </ul>
+    </nav>
+  </header>
+  <section>
+    <form>
+      <h1>Flight Booking</h1>
+      <label for="departure-date">Date of Flight:</label><br>
+      <input type="date" id="departure-date" name="departure-date"><br><br>
+  
+      <label for="return-date">Date of Return Flight:</label><br>
+      <input type="date" id="return-date" name="return-date"><br><br>
+  
+      <label for="departure-location">Departure Location:</label><br>
+      <input type="text" id="departure-location" name="departure-location"><br><br>
+      
+      <label for="arrival-location">Arrival Location:</label><br>
+      <input type="text" id="arrival-location" name="arrival-location"><br><br>
+      
+      <label for="return-date">Number of Travelers</label><br>
+      <input type="text" id="destination" name="destination"><br><br>
+  
+      <input type="submit" value="Book Flight">
+    </form>
+  </section>
 </body>
 </html>
