@@ -53,9 +53,9 @@
           const searchTerm = document.getElementById('searchInput').value.trim();
     
           fetch(`http://localhost:8080/flights/FlightListings.jsp?search=${encodeURIComponent(searchTerm)}`)
-            .then(response => response.json()) // Parse the response as JSON
+            .then(response => response.json()) 
             .then(data => {
-              displayFlights(data); // Call a function to display the flights
+              displayFlights(data); 
             })
             .catch(error => {
               console.error('Error fetching data:', error);
@@ -65,9 +65,9 @@
         function loadAllFlights() {
           checkSession();
           fetch('http://localhost:8080/flights/FlightListings.jsp')
-            .then(response => response.json()) // Parse the response as JSON
+            .then(response => response.json()) 
             .then(data => {
-              displayFlights(data); // Call a function to display the flights
+              displayFlights(data); 
             })
             .catch(error => {
               console.error('Error fetching data:', error);
@@ -76,7 +76,7 @@
     
         function displayFlights(data) {
           const flightList = document.getElementById('flightList');
-          flightList.innerHTML = ''; // Clear existing content
+          flightList.innerHTML = ''; 
     
           fetch('../check_user.jsp')
             .then(response => response.json())

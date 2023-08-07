@@ -45,7 +45,7 @@
             connection.close();
  
 
-            // response.sendRedirect("../flights/Cart.html");
+            response.sendRedirect("../flights/Cart.html");
         } else {
 
             response.sendRedirect("../flights/Cart.html");

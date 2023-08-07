@@ -32,19 +32,19 @@
                     out.println(e);
                 }
 
-                // response.sendError(200, "Okay");
+
             }else{
                 out.println(email);
-                // response.sendError(400, "Bad");
+
             }
         } else {
-            // out.println(email);
-            // response.sendError(400, "Need Authentication");
+
+
         }
     }catch (Exception e){
         out.println(e);
-        // out.println(email);
-        // response.sendError(400, "Need Authentication");
+
+
     }
 %>
 

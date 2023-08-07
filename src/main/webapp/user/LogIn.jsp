@@ -29,15 +29,15 @@
             if (loggedIn) {
 
                 if (session == null) {
-                    // Create a new session and set the "email" attribute
+
                     session = request.getSession(true);
                 }
                 session.setAttribute("email", email);
                 
-                // Redirect to the secured page
+
                 response.sendRedirect("../flights/FlightListings.html");
             } else {
-                // Invalid credentials
+
                 response.sendRedirect("/LogIn.html");
             }
 
