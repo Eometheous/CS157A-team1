@@ -17,6 +17,9 @@
     <nav class="nav-bar">
         <ul>
             <li>
+                <a href="../flights/Cart.html">Cart</a>
+            </li>
+            <li>
                 <a href="../user/LogOut.html">LogOut</a>
             </li>
             <li>
@@ -72,21 +75,30 @@
           const flightList = document.getElementById('flightList');
           flightList.innerHTML = ''; // Clear existing content
     
-          data.forEach(flight => {
-            const flightItem = document.createElement('div');
-            flightItem.innerHTML = `
-              <p>Flight ID: ${flight.flight_id}</p>
-              <p>From: ${flight.from}</p>
-              <p>To: ${flight.to}</p>
-              <p>Departure Time: ${flight.departure_time}</p>
-              <p>Arrival Time: ${flight.arrival_time}</p>
-              <form action="AddToCart.jsp" method="post" id="AddToCartForm">
-                <input style="width: 8rem; text-align: center;" type="submit" value="Add To Cart" name="AddToCartButton" id="AddToCartBut">
-              </form>
-              <hr>
-            `;
-            flightList.appendChild(flightItem);
-          });
+          fetch('../check_user.jsp')
+            .then(response => response.json())
+            .then(userData => {
+              const idUser = userData.iduser;
+
+              data.forEach(flight => {
+                const flightItem = document.createElement('div');
+                flightItem.innerHTML = `
+                  <p>Flight ID: ${flight.flight_id}</p>
+                  <p>From: ${flight.from}</p>
+                  <p>To: ${flight.to}</p>
+                  <p>Departure Time: ${flight.departure_time}</p>
+                  <p>Arrival Time: ${flight.arrival_time}</p>
+                  <form action="AddToCart.jsp?iduser=${idUser}&flight_id=${flight.flight_id}" method="post" id="AddToCartForm">
+                    <input style="width: 8rem; text-align: center;" type="submit" value="Add To Cart" name="AddToCartButton" id="AddToCartBut">
+                  </form>
+                  <hr>
+                `;
+                flightList.appendChild(flightItem);
+              });
+            })
+            .catch(error => {
+              console.error('Error occurred:', error);
+            });
         }
 
         window.onload = loadAllFlights;
