@@ -1,15 +1,22 @@
 function checkSession() {
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-                console.log("true")
-                return true;
-            } else {
-                window.location.href = "login.html";
-            }
-        }
-    };
-    xhr.open('GET', 'check_session.jsp', true); 
-    xhr.send();
+    console.log("running");
+    
+    try{
+        fetch('../check_session.jsp')
+            .then(response => {
+                if (response.ok) {
+                    console.log("true");
+                } else {
+                    console.log("returning false")
+                    window.location.href = "/user/LogIn.html";
+                }
+            })
+            .catch(error => {
+                console.error("Error occurred:", error);
+                window.location.href = "/user/LogIn.html";
+            });
+        }catch {
+            console.log("returning false")
+            window.location.href = "/user/LogIn.html";
+    }
 }

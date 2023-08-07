@@ -164,6 +164,24 @@ header {
     color: azure;
     font-size: 1.5rem;
 }
+.whatWeAre__list__second {
+    margin-top: 8vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: azure;
+    font-size: 1.5rem;
+}
+.flight__list {
+    margin-top: 8vh;
+    color: azure;
+    font-size: 1.5rem;
+}
+
+.flight__list hr{
+    padding-bottom: 2rem;
+}
 
 
 /* Icon from fontawesome */

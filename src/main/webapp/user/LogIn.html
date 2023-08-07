@@ -9,14 +9,15 @@
     function resetForm() {
         var form = document.getElementById('loginForm');
         console.log("ran");
-        form.reset(); // Reset the form
+
     }
 
-    // Call the resetForm function on page load
+
     window.onload = resetForm;
 </script>
-
-<body>
+<script type="text/javascript" src="../navbar.js"></script>
+<script type="text/javascript" src="../sessionCheck.js"></script>
+<body onload="hamburgerMenu();">
     <!-- NavBar -->
     <header>
         <h1> <a href="../index.html" style="width: 20%; text-decoration: none; color: #44cea4;">Flights GO</a></h1>
@@ -34,7 +35,7 @@
                     <a href="SignUp.html">Signup</a>
                 </li>
                 <li>
-                    <a href="../landingPage.html">Book</a>
+                    <a href="../flights/FlightListings.html">Book</a>
                 </li>
             </ul>
         </nav>
@@ -54,8 +55,8 @@
                     </form>
                 </li>
                 <li>
-                    <form action="/SignUp.jsp">
-                        <a href="/SignUp.jsp"><input style="width: 8rem;" type="submit" value="Sign Up"></a>
+                    <form action="SignUp.html">
+                        <a href="SignUp.html"><input style="width: 8rem;" type="submit" value="Sign Up"></a>
                     </form>
                 </li>
             </ul>

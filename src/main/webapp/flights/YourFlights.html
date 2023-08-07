@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart</title>
+</head>
+<link rel="stylesheet" href="../styles.css">
+<script type="text/javascript" src="../sessionCheck.js"></script>
+<body>
+  <!-- NavBar -->
+  <header>
+    <h1> <a href="../index.html" style="width: 20%; text-decoration: none; color: #44cea4;">Flights GO</a></h1>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+        <ul>
+            <li>
+                <a href="../flights/Cart.html">Cart</a>
+            </li>
+            <li>
+                <a href="../flights/YourFlights.html">Your Flights</a>
+              </li>
+              <li>
+                  <a href="../user/LogOut.html">LogOut</a>
+              </li>
+            <li>
+                <a href="../flights/FlightListings.html">Book</a>
+            </li>
+        </ul>
+    </nav>
+  </header>
+
+  <div class="whatWeAre__list__second" style="margin-left: -3rem;">
+    <ul>
+      <li>
+        <h1>Purchased Flights</h1>
+      </li>
+    </ul> 
+  </div>
+  <div class="flight__list"> 
+    <p id="userId"></p>
+    <li>   
+      <script>
+        window.onload = function() {
+          checkSession();
+          fetch('../check_user.jsp')
+            .then(response => response.json())
+            .then(data => {
+              const userId = data.iduser;
+              console.log(userId);
+              fetch(`./YourFlights.jsp?iduser=${userId}`)
+                .then(response => response.json())
+                .then(data => {
+                  const cartItems = data;
+                  const cartList = document.getElementById('cartList');
+
+                  cartItems.forEach(item => {
+                    const cartItem = document.createElement('li');
+                    cartItem.innerHTML = `
+                      <p> Flight ID: ${item.flight_id}</p> 
+                      <p> Plane: ${item.plane} </p>
+                      <p> Departing Airport: ${item.departing_airport}</p>
+                      <p> Arriving Airport: ${item.arriving_airport}</p>
+                      <p> Departure Time: ${item.departure_time}</p> 
+                      <p> Arrival Time: ${item.arrival_time}</p>
+                      <hr>
+                    `;
+                    cartList.appendChild(cartItem);
+                  });
+                  console.log("ran")
+                })
+                .catch(error => {
+                  console.error('Error occurred:', error);
+                });
+            })
+            .catch(error => {
+              console.error('Error occurred:', error);
+            });
+        };
+      </script>
+    </li>
+    <ul id="cartList"></ul> 
+  </div>
+</body>
+</html>
+
