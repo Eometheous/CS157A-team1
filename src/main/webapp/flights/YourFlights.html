@@ -44,6 +44,7 @@
     <li>   
       <script>
         window.onload = function() {
+          checkSession();
           fetch('../check_user.jsp')
             .then(response => response.json())
             .then(data => {
