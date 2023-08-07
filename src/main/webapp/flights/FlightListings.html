@@ -16,10 +16,7 @@
     <nav class="nav-bar">
         <ul>
             <li>
-                <a href="LogIn.html">Login</a>
-            </li>
-            <li>
-                <a href="SignUp.html">Signup</a>
+                <a href="../user/LogOut.html">LogOut</a>
             </li>
             <li>
                 <a href="../flights/FlightListings.html">Book</a>
@@ -27,11 +24,21 @@
         </ul>
     </nav>
   </header>
-    <h1>Flight Listings</h1>
-    <input type="text" id="searchInput" placeholder="Search flights...">
-    <button type="button" onclick="searchFlights()">Search</button>
+
+  <div class="whatWeAre__list__second" style="margin-left: -3rem;">
+    <ul>
+      <li>
+        <h1>Flight Listings</h1>
+      </li>
+      <li>
+        <input type="text" id="searchInput" placeholder="Search flights...">
+        <button type="button" onclick="searchFlights()">Search</button>
+      </li>
+    </ul> 
+  </div>
+  <div class="whatWeAre__list__second__list" style="margin-left: -3rem;"> 
     <ul id="flightList"></ul>
-    <div class="whatWeAre__list" style="margin-left: -3rem;"> 
+    <li>
       <script>
         function searchFlights() {
           const searchTerm = document.getElementById('searchInput').value.trim();
@@ -51,8 +58,10 @@
           fetch('http://localhost:8080/flights/FlightListings.jsp')
             .then(response => response.text())
             .then(data => {
+              console.log(data)
               const flightList = document.getElementById('flightList');
               flightList.innerHTML = data;
+              
             })
             .catch(error => {
               console.error('Error fetching data:', error);
@@ -60,6 +69,7 @@
         }
         window.onload = loadAllFlights;
       </script>
+    </li>
     </div>
 </body>
 </html>

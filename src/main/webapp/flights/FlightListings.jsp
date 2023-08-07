@@ -31,7 +31,7 @@
         ResultSet rs = stmt.executeQuery(sqlStatement);
 
         while (rs.next()) {
-            out.println(rs.getInt(1) + "    " + rs.getString(2) + "    " + rs.getString(3) + "    " + rs.getString(4) + "    " + rs.getString(5) + "<br/>");
+            out.println("<li>" + rs.getInt(1) + "    " + rs.getString(2) + "    " + rs.getString(3) + "    " + rs.getString(4) + "    " + rs.getString(5) + "</li>");
         }
         rs.close();
         stmt.close();
