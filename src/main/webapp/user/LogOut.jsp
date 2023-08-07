@@ -10,5 +10,5 @@
     }
     
 
-    response.sendRedirect("/user/LogIn.html");
+    response.sendRedirect("../user/LogIn.html");
 %>
