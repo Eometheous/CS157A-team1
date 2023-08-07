@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flight Listings</title>
+</head>
+<link rel="stylesheet" href="../styles.css">
+<body>
+  <!-- NavBar -->
+  <header>
+    <h1> <a href="../index.html" style="width: 20%; text-decoration: none; color: #44cea4;">Flights GO</a></h1>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+        <ul>
+            <li>
+                <a href="LogIn.html">Login</a>
+            </li>
+            <li>
+                <a href="SignUp.html">Signup</a>
+            </li>
+            <li>
+                <a href="../flights/FlightListings.html">Book</a>
+            </li>
+        </ul>
+    </nav>
+  </header>
+    <h1>Flight Listings</h1>
+    <input type="text" id="searchInput" placeholder="Search flights...">
+    <button type="button" onclick="searchFlights()">Search</button>
+    <ul id="flightList"></ul>
+    <div class="whatWeAre__list" style="margin-left: -3rem;"> 
+      <script>
+        function searchFlights() {
+          const searchTerm = document.getElementById('searchInput').value.trim();
+
+          fetch(`http://localhost:8080/flights/FlightListings.jsp?search=${encodeURIComponent(searchTerm)}`)
+            .then(response => response.text())
+            .then(data => {
+              const flightList = document.getElementById('flightList');
+              flightList.innerHTML = data;
+            })
+            .catch(error => {
+              console.error('Error fetching data:', error);
+            });
+        }
+
+        function loadAllFlights() {
+          fetch('http://localhost:8080/flights/FlightListings.jsp')
+            .then(response => response.text())
+            .then(data => {
+              const flightList = document.getElementById('flightList');
+              flightList.innerHTML = data;
+            })
+            .catch(error => {
+              console.error('Error fetching data:', error);
+            });
+        }
+        window.onload = loadAllFlights;
+      </script>
+    </div>
+</body>
+</html>
