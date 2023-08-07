@@ -52,7 +52,7 @@
         function searchFlights() {
           const searchTerm = document.getElementById('searchInput').value.trim();
     
-          fetch(`http://localhost:8080/flights/FlightListings.jsp?search=${encodeURIComponent(searchTerm)}`)
+          fetch(`../flights/FlightListings.jsp?search=${encodeURIComponent(searchTerm)}`)
             .then(response => response.json()) 
             .then(data => {
               displayFlights(data); 
@@ -64,7 +64,7 @@
     
         function loadAllFlights() {
           checkSession();
-          fetch('http://localhost:8080/flights/FlightListings.jsp')
+          fetch('../flights/FlightListings.jsp')
             .then(response => response.json()) 
             .then(data => {
               displayFlights(data); 
