@@ -1,4 +1,7 @@
-<%@ page import="javax.servlet.http.HttpSession" %>
+<%@ page import="java.sql.*" %>
+<%@ page import="java.util.*" %>
+<%@ page import="javax.servlet.http.*" %>
+
 <%
     try{
         session = request.getSession(false);
@@ -7,12 +10,12 @@
             if (email != null) {
                 response.sendError(200, "Okay");
             }else{
-                response.sendError(407, "Bad");
+                response.sendError(400, "Bad");
             }
         } else {
-            response.sendError(407, "Need Authentication");
+            response.sendError(400, "Need Authentication");
         }
     }catch (Exception e){
-        response.sendError(407, "Need Authentication");
+        response.sendError(400, "Need Authentication");
     }
 %>

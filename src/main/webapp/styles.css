@@ -173,14 +173,14 @@ header {
     color: azure;
     font-size: 1.5rem;
 }
-.whatWeAre__list__second__list {
+.flight__list {
     margin-top: 8vh;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    text-align: left;
     color: azure;
     font-size: 1.5rem;
+}
+
+.flight__list hr{
+    padding-bottom: 2rem;
 }
 
 

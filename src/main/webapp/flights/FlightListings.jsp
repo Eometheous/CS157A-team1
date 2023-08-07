@@ -1,4 +1,5 @@
 <%@ page import="java.sql.*"%>
+<%@ page contentType="application/json; charset=UTF-8"%>
 <%
     String db = "flight_reservation_system";
     String admin = "joth";
@@ -30,14 +31,32 @@
         Statement stmt = connection.createStatement();
         ResultSet rs = stmt.executeQuery(sqlStatement);
 
+        out.println("[");
+
+        boolean firstRow = true;
         while (rs.next()) {
-            out.println("<li>" + rs.getInt(1) + "    " + rs.getString(2) + "    " + rs.getString(3) + "    " + rs.getString(4) + "    " + rs.getString(5) + "</li>");
+            if (!firstRow) {
+                out.println(",");
+            } else {
+                firstRow = false;
+            }
+
+            out.println("{");
+            out.println("\"flight_id\": " + rs.getInt(1) + ",");
+            out.println("\"from\": \"" + rs.getString(2) + "\",");
+            out.println("\"to\": \"" + rs.getString(3) + "\",");
+            out.println("\"departure_time\": \"" + rs.getString(4) + "\",");
+            out.println("\"arrival_time\": \"" + rs.getString(5) + "\"");
+            out.println("}");
         }
+
+        out.println("]");
+
         rs.close();
         stmt.close();
         connection.close();
 
     } catch (ClassNotFoundException | SQLException e) {
-        out.println("SQLException caught: " + e.getMessage());
+        out.println("{\"error\": \"SQLException caught: " + e.getMessage() + "\"}");
     }
 %>

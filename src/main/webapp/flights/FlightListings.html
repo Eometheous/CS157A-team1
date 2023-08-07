@@ -4,6 +4,7 @@
   <title>Flight Listings</title>
 </head>
 <link rel="stylesheet" href="../styles.css">
+<script type="text/javascript" src="../sessionCheck.js"></script>
 <body>
   <!-- NavBar -->
   <header>
@@ -36,40 +37,61 @@
       </li>
     </ul> 
   </div>
-  <div class="whatWeAre__list__second__list" style="margin-left: -3rem;"> 
-    <ul id="flightList"></ul>
-    <li>
+  <div class="flight__list"> 
+    <ul id="flightList">
+      <!-- The Stuff returned from flights goes in here, check the id -->
+    </ul>
+    <li>   
       <script>
         function searchFlights() {
           const searchTerm = document.getElementById('searchInput').value.trim();
-
+    
           fetch(`http://localhost:8080/flights/FlightListings.jsp?search=${encodeURIComponent(searchTerm)}`)
-            .then(response => response.text())
+            .then(response => response.json()) // Parse the response as JSON
             .then(data => {
-              const flightList = document.getElementById('flightList');
-              flightList.innerHTML = data;
+              displayFlights(data); // Call a function to display the flights
             })
             .catch(error => {
               console.error('Error fetching data:', error);
             });
+        }
+    
+        function loadAllFlights() {
+          checkSession();
+          fetch('http://localhost:8080/flights/FlightListings.jsp')
+            .then(response => response.json()) // Parse the response as JSON
+            .then(data => {
+              displayFlights(data); // Call a function to display the flights
+            })
+            .catch(error => {
+              console.error('Error fetching data:', error);
+            });
+        }
+    
+        function displayFlights(data) {
+          const flightList = document.getElementById('flightList');
+          flightList.innerHTML = ''; // Clear existing content
+    
+          data.forEach(flight => {
+            const flightItem = document.createElement('div');
+            flightItem.innerHTML = `
+              <p>Flight ID: ${flight.flight_id}</p>
+              <p>From: ${flight.from}</p>
+              <p>To: ${flight.to}</p>
+              <p>Departure Time: ${flight.departure_time}</p>
+              <p>Arrival Time: ${flight.arrival_time}</p>
+              <form action="AddToCart.jsp" method="post" id="AddToCartForm">
+                <input style="width: 8rem; text-align: center;" type="submit" value="Add To Cart" name="AddToCartButton" id="AddToCartBut">
+              </form>
+              <hr>
+            `;
+            flightList.appendChild(flightItem);
+          });
         }
 
-        function loadAllFlights() {
-          fetch('http://localhost:8080/flights/FlightListings.jsp')
-            .then(response => response.text())
-            .then(data => {
-              console.log(data)
-              const flightList = document.getElementById('flightList');
-              flightList.innerHTML = data;
-              
-            })
-            .catch(error => {
-              console.error('Error fetching data:', error);
-            });
-        }
         window.onload = loadAllFlights;
       </script>
     </li>
-    </div>
+  </div>
 </body>
 </html>

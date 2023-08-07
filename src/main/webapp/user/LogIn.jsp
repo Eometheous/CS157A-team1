@@ -38,8 +38,7 @@
                 response.sendRedirect("../flights/FlightListings.html");
             } else {
                 // Invalid credentials
-                out.println(email);
-                out.println(password);
+                response.sendRedirect("/LogIn.html");
             }
 
             resultSet.close();
