@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manifest</title>
+</head>
+<link rel="stylesheet" href="../styles.css">
+<script type="text/javascript" src="../sessionCheck.js"></script>
+<body>
+<!-- NavBar -->
+<header>
+    <h1> <a href="../flights/FlightListings.html" style="width: 20%; text-decoration: none; color: #44cea4;">Flights GO</a></h1>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+        <ul>
+            <li>
+                <a href="../flights/Cart.html">Cart</a>
+            </li>
+            <li>
+                <a href="../flights/YourFlights.html">Your Flights</a>
+            </li>
+            <li>
+                <a href="../user/LogOut.html">LogOut</a>
+            </li>
+            <li>
+                <a href="../flights/FlightListings.html">Book</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div class="whatWeAre__list__second" style="margin-left: -3rem;">
+    <ul>
+        <li>
+            <h1>Manifest</h1>
+        </li>
+        <li>
+            <input type="text" id="searchInput" placeholder="Search flights...">
+            <button type="button" onclick="searchFlights()">Search</button>
+        </li>
+    </ul>
+</div>
+<div class="flight__list">
+    <ul id="flightList">
+        <!-- The Stuff returned from flights goes in here, check the id -->
+    </ul>
+    <li>
+        <script>
+        function searchFlights() {
+          const searchTerm = document.getElementById('searchInput').value.trim();
+
+          fetch(`../flights/FlightListings.jsp?search=${encodeURIComponent(searchTerm)}`)
+            .then(response => response.json())
+            .then(data => {
+              displayFlights(data);
+            })
+            .catch(error => {
+              console.error('Error fetching data:', error);
+            });
+        }
+
+        function loadAllFlights() {
+          checkSession();
+          fetch('../flights/Manifest.jsp')
+            .then(response => response.json())
+            .then(data => {
+              displayFlights(data);
+            })
+            .catch(error => {
+              console.error('Error fetching data:', error);
+            });
+        }
+
+        function displayFlights(data) {
+          const flightList = document.getElementById('flightList');
+          flightList.innerHTML = '';
+
+          fetch('../check_user.jsp')
+            .then(response => response.json())
+            .then(userData => {
+              const idUser = userData.iduser;
+
+                console.log(data);
+
+              data.forEach(flight => {
+                const flightItem = document.createElement('div');
+                flightItem.innerHTML = `
+                  <p>User ID: ${flight.user_id}</p>
+                  <p>Email: ${flight.email}</p>
+                  <p>Flight ID: ${flight.flight_id}</p>
+                  <p>From: ${flight.departing_airport}</p>
+                  <p>To: ${flight.arriving_airport}</p>
+                  <p>Departure Time: ${flight.departure_time}</p>
+                  <p>Arrival Time: ${flight.arrival_time}</p>
+                  <p>Seats Available: ${flight.seats_available}</p>
+
+                  <form action="AddToCart.jsp?iduser=${idUser}&flight_id=${flight.flight_id}" method="post" id="AddToCartForm">
+                    <input style="width: 8rem; text-align: center;" type="submit" value="Add To Cart" name="AddToCartButton" id="AddToCartBut">
+                  </form>
+                  <hr>
+                `;
+                flightList.appendChild(flightItem);
+              });
+            })
+            .catch(error => {
+              console.error('Error occurred:', error);
+            });
+        }
+
+        window.onload = loadAllFlights;
+      </script>
+    </li>
+</div>
+</body>
+</html>
