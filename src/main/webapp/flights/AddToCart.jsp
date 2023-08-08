@@ -30,7 +30,7 @@
                     "from `flight_reservation_system`.cart " + 
                     "Where flight_id = ? and iduser = ?" + 
                 ")";
-            out.println(sqlStatement);
+
             PreparedStatement pstmt = connection.prepareStatement(sqlStatement);
             pstmt.setInt(1, iduser);
             pstmt.setInt(2, flightId);
@@ -40,9 +40,18 @@
 
             pstmt.close();
 
-            connection.close();
  
-
+            String updateSqlStatement = "UPDATE `flight_reservation_system`.flight " +
+                                        "SET seats_available = seats_available - 1 " +
+                                        "WHERE flight_id = ?;";
+            PreparedStatement updateState = connection.prepareStatement(updateSqlStatement);
+            updateState.setInt(1, flightId);
+            int rowsUpdated = updateState.executeUpdate();
+            
+            updateState.close();
+            
+            connection.close();
+            out.println(flightId);
             response.sendRedirect("../flights/FlightListings.html");
         } else {
 

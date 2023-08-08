@@ -15,19 +15,19 @@
 
         if (searchTerm != null && !searchTerm.trim().isEmpty()) {
 
-            sqlStatement = "SELECT flight_id, a1.airport_name AS `from`, a2.airport_name AS `to`, flight.departure_time, flight.arrival_time " +
+            sqlStatement = "SELECT flight_id, a1.airport_name AS `from`, a2.airport_name AS `to`, flight.departure_time, flight.arrival_time,  seats_available " +
                            "FROM flight, airport a1, airport a2 " +
                            "WHERE a1.airport_id = flight.departing_airport " +
                            "AND a2.airport_id = flight.arriving_airport " +
                            "AND (a1.airport_name LIKE '%" + searchTerm + "%' OR a2.airport_name LIKE '%" + searchTerm + "%') " +
-                           "AND flight_id not in (select flight_id from purchased);";
+                           "AND seats_available > 0;";
         } else {
 
-            sqlStatement = "SELECT flight_id, a1.airport_name AS `from`, a2.airport_name AS `to`, flight.departure_time, flight.arrival_time " +
+            sqlStatement = "SELECT flight_id, a1.airport_name AS `from`, a2.airport_name AS `to`, flight.departure_time, flight.arrival_time,  seats_available " +
                            "FROM flight, airport a1, airport a2 " +
                            "WHERE a1.airport_id = flight.departing_airport " +
                            "AND a2.airport_id = flight.arriving_airport " +
-                           "AND flight_id not in (select flight_id from purchased);";
+                           "AND seats_available > 0;";
         }
 
         Statement stmt = connection.createStatement();
@@ -48,7 +48,8 @@
             out.println("\"from\": \"" + rs.getString(2) + "\",");
             out.println("\"to\": \"" + rs.getString(3) + "\",");
             out.println("\"departure_time\": \"" + rs.getString(4) + "\",");
-            out.println("\"arrival_time\": \"" + rs.getString(5) + "\"");
+            out.println("\"arrival_time\": \"" + rs.getString(5) + "\",");
+            out.println("\"seats_available\": \"" + rs.getInt(6) + "\"");
             out.println("}");
         }
 
