@@ -38,7 +38,7 @@
                 response.sendRedirect("../flights/FlightListings.html");
             } else {
 
-                response.sendRedirect("/LogIn.html");
+                response.sendRedirect("/user/LogIn.html");
             }
 
             resultSet.close();

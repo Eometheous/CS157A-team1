@@ -20,3 +20,26 @@ function checkSession() {
             window.location.href = "/user/LogIn.html";
     }
 }
+
+function isAdmin() {
+    console.log("running");
+    
+    try{
+        fetch('../check_level.jsp')
+            .then(response => {
+                if (response.ok) {
+                    console.log("true");
+                } else {
+                    window.location.href = "/user/LogIn.html";
+                }
+            })
+            .catch(error => {
+                console.error("Error occurred:", error);
+                window.location.href = "/user/LogIn.html";
+            });
+        }catch {
+            console.log("returning false")
+            window.location.href = "/user/LogIn.html";
+    }
+}
+
