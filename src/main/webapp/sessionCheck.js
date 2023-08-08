@@ -25,12 +25,11 @@ function isAdmin() {
     console.log("running");
     
     try{
-        fetch('../check_admin.jsp')
+        fetch('../check_level.jsp')
             .then(response => {
                 if (response.ok) {
                     console.log("true");
                 } else {
-                    console.log("returning false")
                     window.location.href = "/user/LogIn.html";
                 }
             })

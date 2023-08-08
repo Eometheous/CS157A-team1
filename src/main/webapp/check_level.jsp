@@ -21,12 +21,14 @@
                     Statement stmt = connection.createStatement();
                     ResultSet rs = stmt.executeQuery(sqlStatement);
 
-                    if(rs.getInt("access_level") >= 1){
-                        response.sendError(200, "Okay");
-                    }else{
-                        response.sendError(400, "Bad");
+                    while(rs.next()){
+                        if(rs.getInt("access_level") >= 1){
+                            response.sendError(200, "Okay");
+                        }else{
+                            response.sendError(400, "Bad");
+                        }
                     }
-
+                    response.sendError(200, "Okay");
                 }catch (Exception e){
                     out.println(e);
                 }
