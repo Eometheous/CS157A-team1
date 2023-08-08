@@ -26,24 +26,24 @@
 
             String sqlStatement = "INSERT INTO `flight_reservation_system`.purchased (flight_id, iduser) " +
                 "Values (?, ?); " ;
-            out.println(flightId);
-            out.println(iduser);
-            out.println(sqlStatement);
             PreparedStatement pstmt = connection.prepareStatement(sqlStatement);
-            pstmt.setInt(1, flightId);
-            pstmt.setInt(2, iduser);
-            
-            int rowsAffected = pstmt.executeUpdate();
+
+            try {
+                pstmt.setInt(1, flightId);
+                pstmt.setInt(2, iduser);
+                int rowsAffected = pstmt.executeUpdate();
+            }catch (SQLIntegrityConstraintViolationException e){
+                String good = "good";
+            }
 
             sqlStatement = "DELETE FROM `flight_reservation_system`.cart where cart_id = ?";
             pstmt = connection.prepareStatement(sqlStatement);
             pstmt.setInt(1, cart_id);
             
-            rowsAffected = pstmt.executeUpdate();
+            int rowsAffected = pstmt.executeUpdate();
             pstmt.close();
 
             connection.close();
- 
 
             response.sendRedirect("../flights/Cart.html");
         } else {

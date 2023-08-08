@@ -91,6 +91,7 @@
                   <p>To: ${flight.to}</p>
                   <p>Departure Time: ${flight.departure_time}</p>
                   <p>Arrival Time: ${flight.arrival_time}</p>
+                  <p>Seats Available: ${flight.seats_available}</p>
                   <form action="AddToCart.jsp?iduser=${idUser}&flight_id=${flight.flight_id}" method="post" id="AddToCartForm">
                     <input style="width: 8rem; text-align: center;" type="submit" value="Add To Cart" name="AddToCartButton" id="AddToCartBut">
                   </form>
