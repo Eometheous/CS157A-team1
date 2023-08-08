@@ -35,17 +35,13 @@
 
 
             }else{
-                out.println(email);
-
+                response.sendError(400, "Bad");
             }
         } else {
-
-
+            response.sendError(400, "Bad");
         }
     }catch (Exception e){
-        out.println(e);
-
-
+        response.sendError(400, "Bad");
     }
 %>
 
