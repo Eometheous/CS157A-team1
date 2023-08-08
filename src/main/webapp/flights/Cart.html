@@ -66,7 +66,7 @@
                       <p> Arriving Airport: ${item.arriving_airport}</p>
                       <p> Departure Time: ${item.departure_time}</p> 
                       <p> Arrival Time: ${item.arrival_time}</p>
-                      <form action="RemoveFromCart.jsp?cart_id=${item.cart_id}" method="post" id="RemoveFromCartForm">
+                      <form action="RemoveFromCart.jsp?cart_id=${item.cart_id}&flight_id=${item.flight_id}" method="post" id="RemoveFromCartForm">
                         <input style="width: 8rem; text-align: center;" type="submit" value="Remove From Cart" name="RemoveFromCartButton" id="RemoveFromCartBut">
                       </form>
                       <form action="PurchaseFlight.jsp?flight_id=${item.flight_id}&iduser=${userId}&cart_id=${item.cart_id}" method="post" id="PurchaseCartForm">

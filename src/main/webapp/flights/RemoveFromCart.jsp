@@ -14,8 +14,10 @@
 
 
         String cartIdStr = request.getParameter("cart_id");
+        String flightIdStr = request.getParameter("flight_id");
         if (cartIdStr != null && !cartIdStr.isEmpty()) {
             int cartId = Integer.parseInt(cartIdStr);
+            int flightId = Integer.parseInt(flightIdStr);
 
 
             String sqlStatement = "DELETE FROM `flight_reservation_system`.`cart` WHERE cart_id = ?";
@@ -26,6 +28,14 @@
 
             pstmt.close();
 
+            String updateSqlStatement = "UPDATE `flight_reservation_system`.flight " +
+                                        "SET seats_available = seats_available + 1 " +
+                                        "WHERE flight_id = ?;";
+            PreparedStatement updateState = connection.prepareStatement(updateSqlStatement);
+            updateState.setInt(1, flightId);
+            int rowsUpdated = updateState.executeUpdate();
+            
+            updateState.close();
 
             connection.close();
 
