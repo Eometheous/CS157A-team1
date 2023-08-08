@@ -28,7 +28,7 @@
                             response.sendError(400, "Bad");
                         }
                     }
-                    response.sendError(200, "Okay");
+                    response.sendError(400, "bad");
                 }catch (Exception e){
                     out.println(e);
                 }
