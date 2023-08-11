@@ -35,7 +35,7 @@ CREATE TABLE `plane_seat` (
 
 LOCK TABLES `plane_seat` WRITE;
 /*!40000 ALTER TABLE `plane_seat` DISABLE KEYS */;
-INSERT INTO `plane_seat` VALUES (1,1),(1,2),(1,3),(1,4),(1,5),(1,6),(1,7),(1,8),(1,9),(1,10);
+INSERT INTO `plane_seat` VALUES (1,1),(1,2),(1,3),(1,4),(1,5),(1,6),(1,7),(1,8),(1,9),(1,10),(2,11),(2,12),(2,13),(2,14),(2,15);
 /*!40000 ALTER TABLE `plane_seat` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-08-04 19:06:22
+-- Dump completed on 2023-08-10 20:45:54

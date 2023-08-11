@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `flight_reservation_system` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `flight_reservation_system`;
 -- MySQL dump 10.13  Distrib 8.0.33, for macos13 (arm64)
 --
 -- Host: localhost    Database: flight_reservation_system
@@ -28,7 +26,7 @@ CREATE TABLE `airport` (
   `airport_id` int NOT NULL AUTO_INCREMENT,
   `airport_name` varchar(45) NOT NULL,
   PRIMARY KEY (`airport_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +35,7 @@ CREATE TABLE `airport` (
 
 LOCK TABLES `airport` WRITE;
 /*!40000 ALTER TABLE `airport` DISABLE KEYS */;
-INSERT INTO `airport` VALUES (1,'Los Angeles International Airport'),(2,'San Francisco International Airport'),(3,'San Jose Mineta International Airport'),(4,'Palo Alto Airport'),(5,'Long Beach Airport'),(6,'Lake Tahoe Airport'),(7,'Santa Barbara Airport'),(8,'Palm Springs International Airport'),(9,'Fresno Yosemite International Airport'),(10,'Monterey Regional Airport'),(11,'Santa Rosa Airport');
+INSERT INTO `airport` VALUES (1,'Los Angeles International Airport'),(2,'San Francisco International Airport'),(3,'San Jose Mineta International Airport'),(4,'Palo Alto Airport'),(5,'Long Beach Airport'),(6,'Lake Tahoe Airport'),(7,'Santa Barbara Airport'),(8,'Palm Springs International Airport'),(9,'Fresno Yosemite International Airport'),(10,'Monterey Regional Airport'),(11,'Santa Rosa Airport'),(12,'San Carlos Airport'),(13,'Modesto City-County Airport'),(14,'Buchanan Field Airport'),(15,'Paso Robles Municipal Airport'),(16,'null');
 /*!40000 ALTER TABLE `airport` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-07-28 12:11:26
+-- Dump completed on 2023-08-10 20:45:54
