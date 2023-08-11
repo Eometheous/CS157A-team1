@@ -8,16 +8,16 @@ function checkSession() {
                     console.log("true");
                 } else {
                     console.log("returning false")
-                    window.location.href = "/user/LogIn.html";
+                    window.location.href = "../user/LogIn.html";
                 }
             })
             .catch(error => {
                 console.error("Error occurred:", error);
-                window.location.href = "/user/LogIn.html";
+                window.location.href = "../user/LogIn.html";
             });
         }catch {
             console.log("returning false")
-            window.location.href = "/user/LogIn.html";
+            window.location.href = "../user/LogIn.html";
     }
 }
 
@@ -30,16 +30,16 @@ function isAdmin() {
                 if (response.ok) {
                     console.log("true");
                 } else {
-                    window.location.href = "/user/LogIn.html";
+                    window.location.href = "../user/LogIn.html";
                 }
             })
             .catch(error => {
                 console.error("Error occurred:", error);
-                window.location.href = "/user/LogIn.html";
+                window.location.href = "../user/LogIn.html";
             });
         }catch {
             console.log("returning false")
-            window.location.href = "/user/LogIn.html";
+            window.location.href = "../user/LogIn.html";
     }
 }
 

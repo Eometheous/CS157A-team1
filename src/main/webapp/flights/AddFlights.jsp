@@ -81,7 +81,7 @@
         pstmt.close();
         connection.close();
 
-        response.sendRedirect("FlightListings.jsp");
+        response.sendRedirect("AddFlights.html");
 
     } catch (ClassNotFoundException | SQLException e) {
         response.sendRedirect("AddFlights.html");

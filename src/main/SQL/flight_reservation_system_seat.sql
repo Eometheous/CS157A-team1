@@ -28,7 +28,7 @@ CREATE TABLE `seat` (
   `column` varchar(45) NOT NULL,
   `type` varchar(45) NOT NULL,
   PRIMARY KEY (`seat_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,7 @@ CREATE TABLE `seat` (
 
 LOCK TABLES `seat` WRITE;
 /*!40000 ALTER TABLE `seat` DISABLE KEYS */;
-INSERT INTO `seat` VALUES (1,1,'A','first class'),(2,1,'B','first class'),(3,2,'A','economy plus'),(4,2,'B','economy plus'),(5,3,'A','economy plus'),(6,3,'B','economy plus'),(7,4,'A','economy'),(8,4,'B','economy'),(9,5,'A','economy'),(10,5,'B','economy');
+INSERT INTO `seat` VALUES (1,1,'A','first class'),(2,1,'B','first class'),(3,2,'A','economy plus'),(4,2,'B','economy plus'),(5,3,'A','economy plus'),(6,3,'B','economy plus'),(7,4,'A','economy'),(8,4,'B','economy'),(9,5,'A','economy'),(10,5,'B','economy'),(11,1,'A','economy'),(12,1,'B','economy'),(13,2,'A','economy'),(14,2,'B','economy'),(15,2,'C','economy');
 /*!40000 ALTER TABLE `seat` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-08-04 19:06:23
+-- Dump completed on 2023-08-10 20:45:53
